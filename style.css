@@ -1,0 +1,321 @@
+
+@font-face {
+    font-family: "Bai+Jamjuree-bold";
+    src: url(./fonts/BaiJamjuree-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Bai+Jamjuree";
+    src: url(./fonts/BaiJamjuree-Light.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+}
+
+header {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+header  ,.avaliblity {
+    text-align: center;
+    padding: 5%;
+
+}
+
+.icon {
+    padding: 5%;
+}
+
+h1 {
+    font-size: 45px;
+    padding: 0 5%;
+    
+}
+
+h1 ,h2 ,h3 ,.btn {
+    font-family: 'Bai+Jamjuree-bold' ,sans-serif;
+    color: hsl(210, 10%, 33%);
+    font-weight: 400;
+
+}
+
+header p ,.avaliblity>p {
+    padding: 2% 20%;
+    font-size: 20px;
+    margin-bottom: 3%;
+    
+}
+
+p {
+    font-family: 'Bai+Jamjuree';
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+
+}
+
+.btn {
+    margin: 7px;
+    cursor: pointer;
+  background-color: hsl(171, 66%, 44%);
+  padding: 18px 40px;
+  border-radius: 39px;
+  text-decoration: none;
+  color: #ffffffc2;
+  font-size: 18px;
+}
+
+.btn:hover {
+    background-color: hsl(171, 66%, 44%, 0.8);
+}
+
+.btn.mac {
+    background-color: hsl(233, 100%, 69%);
+}
+
+.btn.mac:hover {
+    background-color: hsl(233, 100%, 69%, 0.8);
+}
+
+.features h2 {
+    font-size: 35px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.features p.p2 {
+    font-size: 17px;
+  padding: 0 10%;
+  width: 75%;
+  margin: 2% auto;
+}
+
+.contaner {
+    display: flex;
+    margin-top: 6% ;
+    margin-bottom: 8%;
+}
+
+.contaner img {
+    margin-left: -26px;
+}
+
+.contaner .com-feature {
+    padding: 0 5%;
+}
+
+.f1 ,.f2 ,.f3 {
+    margin-top: 14%;
+}
+
+.contaner .com-feature h3{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.access {
+  text-align: center;
+}
+
+.access img {
+    margin: 6% auto;
+}
+
+/* Properties */
+
+div.properties {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 6% auto;
+    padding: 0 70px;
+  gap: 20px;
+}
+
+div.properties>div>h3 ,div.properties>div>img{
+    margin: 20px auto;
+}
+
+/* Companies */
+
+div.companies{
+    margin: 8% 4%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div.companies>img {
+    margin: 3% 4px;
+}
+
+/* Avaliblity */
+
+div.avaliblity>h2 {
+    font-size: 35px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: hsla(202.1, 11%, 66.1%, 0.1);
+    margin: 5% 0  0;
+    padding: 40px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer  ul {
+    list-style: none;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 40px;
+}
+
+footer ul li {
+    width: calc(100% / 4);
+}
+
+footer ul li:nth-child(2) {
+    order: 4;
+}
+
+footer ul li:nth-child(3) {
+    order: 2;
+}
+
+footer ul li:nth-child(4) {
+    order: 5;
+}
+
+footer ul li:nth-child(5) {
+    order: 3;
+}
+
+
+footer ul li>a {
+    font-family: 'Bai+Jamjuree';
+    color: hsl(210, 10%, 33%);
+    
+}
+
+footer ul li>a:hover {
+    color: #26BBA4;
+}
+
+footer div>a {
+    margin-right: 13px;
+}
+
+div.social a.Facebook{
+    content: url(./images/icon-facebook.svg);
+}
+
+div.social a.instagram{
+    content: url(./images/icon-instagram.svg);
+}
+
+div.social a.X{
+    content: url(./images/icon-twitter.svg);
+}
+/* hovring state */
+
+div.social a.Facebook:hover{
+    content: url(./images/icon-facebook-h.svg);
+}
+
+div.social a.instagram:hover{
+    content: url(./images/icon-instagram-h.svg);
+}
+
+div.social a.X:hover{
+    content: url(./images/icon-twitter-h.svg);
+}
+
+
+/* Small devices */
+@media (max-width:768px) {
+    header {
+        background-image: url(./images/bg-header-mobile.png);
+    }
+
+    h1 ,h2 ,h3 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    header p ,.avaliblity>p {
+        padding: 2% 0 ;
+    }
+
+    .btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .features p.p2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .contaner ,div.companies {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contaner img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .access img {
+        width: 100%;
+    }
+
+    div.properties {
+        grid-template-columns: 1fr;
+    }
+
+    div.companies>img {
+        margin: 10% auto;
+    }
+
+    footer , footer ul {
+        flex-direction: column;
+    }
+
+    footer ul {
+        margin: 20px auto;
+        width: auto;
+        align-items: center;
+        gap: 19px 0;
+    }
+
+    footer ul li {
+        width: auto;
+        margin-left: -40px;
+        
+    }
+
+    footer ul li:nth-child(2) {
+        order: 1;
+    }
+    
+    footer ul li:nth-child(3) {
+        order: 3;
+    }
+    
+    footer ul li:nth-child(4) {
+        order: 4;
+    }
+    
+    footer ul li:nth-child(5) {
+        order: 5;
+    }
+
+}
