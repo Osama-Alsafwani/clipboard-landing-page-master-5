@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Osama-Alsafwani/clipboard-landing-page-master-5.git)
+- Live Site URL: [Add live site URL here](https://osama-alsafwani.github.io/clipboard-landing-page-master-5/)
 
 ## My process
 
